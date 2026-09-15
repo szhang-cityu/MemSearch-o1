@@ -19,13 +19,12 @@ from prompts import (
     get_task_instruction_code, 
 )
 
-# 假设你已经定义了这些全局变量
-API_SECRET_KEY = "sk-zk22528c689c68abb04cbfaf2ec6373a09868bbdef5a073b"
-BASE_URL = "https://api.zhizengzeng.com/v1"
-END_SEARCH_QUERY = "<|end_search_query|>"  # 替换为你实际的结束符
+
+API_SECRET_KEY = ""
+BASE_URL = ""
+END_SEARCH_QUERY = "<|end_search_query|>"
 BEGIN_SEARCH_QUERY = "<|begin_search_query|>"
 
-# 初始化 client（可复用）
 client = OpenAI(api_key=API_SECRET_KEY, base_url=BASE_URL)
 
 
